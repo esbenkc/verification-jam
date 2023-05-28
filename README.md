@@ -18,7 +18,7 @@ Ideas to explore
     1. Have access to two language models of an alright size, minimizing $\dfrac{\text{inference time}}{\text{performance need}}$ ratio
     2. Run one model $M_1$ with the instruction `You are an expert tasked with fuzzing a language model. Find the weirdest and most fringe inputs to the model` or something similar, possibly with multiple examples of very weird inputs (history $H_1$).
     3. Send the $H_1$ output to the fuzzing target model $M_2$ and record its output (history $H_2$)
-    4. Use either the first inference history $H_1$ or a new inference history $H_3$ with instructions `You are tasked with classifying conversation answers in 5 levels of weirdness or expectation. Is this output """{`$H_2$`.output}""" expected given the input """{`$H_2$`.input}"""?`
+    4. Use either the first inference history $H_1$ or a new inference history $H_3$ with instructions `You are tasked with classifying conversation answers in 5 levels of weirdness or expectation. Is this output """{` $H_2$ `.output}""" expected given the input """{` $H_2$ `.input}"""?`
     5. Get the 5-level classification and save it in a dataset. Also save the activations on $M_2$ for $H_2$ and connect it with the 5-level weirdness clasisfication, the input prompt, and whatever other meta-data makes sense.
     6. Manually investigate if the dataset outputs make sense, i.e. are the levels coherent with the weirdness of the dataset. This is a sanity check.
     7. If no, rerun (2-6) with better parameters or redesign the methodology (1-6).
