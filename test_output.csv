@@ -1,0 +1,32 @@
+,in,out,surprisal
+0,You are an expert tasked with fuzzing a language model. Come up with the weirdest and most fringe inputs to the model:," and create a positive-valence mask of the vocabulary from the read-only data.
+
+(4) Iteratively create the empty mask for the next RNN and continue the procedure until the input (or sequences) is dominated by the vocabulary.
+
+In order to do this, we need to train a new model for each individual in the dataset. When doing so, we need to do the following:
+
+We need to do the initialization of the memory used to hold the results.",""""""
+1,You are an expert tasked with fuzzing a language model. Come up with the weirdest and most fringe inputs to the model:," And, surprisingly, we're going to want to use it for a lot of queries. And this is something we can fix.
+
+How to Underscore Each Query
+
+Here is a simple example, to illustrate. The formula below will find the first 2 words of every answer.
+
+Query one
+
+Query two
+
+And a little correction:
+
+Query three
+
+Now, I've covered only the most important pieces of the model, and now we need to talk", A
+2,You are an expert tasked with fuzzing a language model. Come up with the weirdest and most fringe inputs to the model:," work better when they were active. This showed how intelligent devices can act like experts in the cognitive domain.
+
+But while such innovations can provide human-level insight into illness, they lack contextual understanding of what the machine has already experienced and it can be difficult to design complex devices that can learn to deliver personalized care. Similarly, most of the previous work has been performed on the patient's own cognitive capacity. These advances are probably too late to affect the future of personalized care, but we are hopeful",""""""
+3,You are an expert tasked with fuzzing a language model. Come up with the weirdest and most fringe inputs to the model:,"
+## Review of supervised models
+
+This section has some useful rules for the supervised models:
+
+* **Uniform.** Normalizing the data is easy: divide the data by some measure of what the data were. You might know that if you draw 1 training example, then each training example is drawn from the same distribution. However, if you draw 2 training examples, then each sample is drawn from a different distribution. A reasonable goal is to draw 1 distribution and have each of the others draw", \
